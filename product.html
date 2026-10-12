@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Products | Adolchy Enterprises</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header>
+  <div class="navbar">
+    <div class="logo">ADOLCHY ENTERPRISES</div>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="product.html">Products</a>
+      <a href="about.html">About</a>
+      <a href="delivery.html">Delivery</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="container">
+    <h1>Product Catalogue</h1>
+    <p>Click a product below. The product box will open its individual sizes, colours or variants and show the corresponding price information.</p>
+  </div>
+</section>
+
+<section class="section" id="catalogue">
+<div class="container">
+  <div class="catalog-intro">
+    <h2>How the catalogue works</h2>
+    <p>Each brand/range is kept in its own box. Click <strong>View sizes / colours</strong> and then click an individual option. LUMAX BOND and ISOSTIK are deliberately separate sections.</p>
+  </div>
+
+  <div class="product-grid">
+    <article class="product-card" id="topbond"><img src="images/top-bond.png" alt="TOP BOND"><div class="product-body"><span class="badge">ADHESIVE</span><h3>TOP BOND</h3><p>100g, 250g, 500g, 1kg, 2kg, 5kg, 10kg, 20kg.</p><button class="btn" data-product="topbond">View sizes / prices</button></div></article>
+    <article class="product-card" id="visa"><img src="images/visa-perfect-bond.png" alt="VISA Perfect Bond"><div class="product-body"><span class="badge">ADHESIVE</span><h3>VISA PERFECT BOND</h3><p>100g through 20kg.</p><button class="btn" data-product="visa">View sizes / prices</button></div></article>
+    <article class="product-card" id="screws"><img src="images/drywall-screws.png" alt="Screw Nails"><div class="product-body"><span class="badge">HARDWARE</span><h3>SCREW NAILS</h3><p>Black and white, six sizes, 500pcs packs.</p><button class="btn" data-product="screws">View sizes / prices</button></div></article>
+    <article class="product-card" id="vitrac"><img src="images/vitrac-gum.png" alt="Vitrac Gum"><div class="product-body"><span class="badge">ADHESIVE</span><h3>VITRAC GUM</h3><p>500g, 1kg, 3kg, 15kg.</p><button class="btn" data-product="vitrac">View sizes / prices</button></div></article>
+    <article class="product-card" id="edge"><img src="images/edge-tape.png" alt="Edge Tape"><div class="product-body"><span class="badge">EDGE BANDING</span><h3>EDGE TAPE</h3><p>All catalogue colours/finishes. Gold and Silver have their special prices.</p><button class="btn" data-product="edge">View colours / prices</button></div></article>
+    <article class="product-card" id="runners"><img src="images/rossy-joy.png" alt="Rossy-Joy Runners"><div class="product-body"><span class="badge">DRAWER RUNNERS</span><h3>ROSSY-JOY RUNNERS</h3><p>10&quot;, 12&quot;, 14&quot;, 16&quot;, 18&quot;, 20&quot; in black and white.</p><button class="btn" data-product="runners">View sizes / prices</button></div></article>
+    <article class="product-card" id="multibond"><img src="images/multi-bond.png" alt="Super Multi Bond"><div class="product-body"><span class="badge">ADHESIVE</span><h3>SUPER MULTI BOND</h3><p>5kg, 10kg and 20kg — all bucket form.</p><button class="btn" data-product="multibond">View sizes / prices</button></div></article>
+    <article class="product-card" id="lumax"><img src="images/lumax-bond.png" alt="Lumax Bond"><div class="product-body"><span class="badge">SEPARATE SECTION</span><h3>LUMAX BOND</h3><p>500g, 1kg, 3kg, 15kg.</p><button class="btn" data-product="lumax">View sizes / prices</button></div></article>
+    <article class="product-card" id="isostik"><img src="images/isostik.png" alt="Isostik"><div class="product-body"><span class="badge">SEPARATE SECTION</span><h3>ISOSTIK</h3><p>1kg product shown separately from LUMAX BOND.</p><button class="btn" data-product="isostik">View size / price</button></div></article>
+  </div>
+
+  <div id="detail-panel" class="detail-panel hidden">
+    <h2 id="detail-title" style="color:var(--primary)"></h2>
+    <p id="detail-description" style="color:var(--muted);margin:5px 0 18px"></p>
+    <img id="detail-image" src="" alt="" style="width:100%;max-height:360px;object-fit:contain;border-radius:14px;background:#fff;margin-bottom:22px">
+    <div id="option-grid" class="option-grid"></div>
+    <div id="selected-detail" class="variant-detail"></div>
+  </div>
+
+
+  <div class="note"><strong>Other products </strong>Our Other include <ol><li>Chair legs</li><li>cabinet hinges</li><li>solignum</li><li>Timberlock</li><li> cord</li>
+  <li>Staple pin</li><li>Staple Machine </li><li>Buttons</li><li>Coffin Coners</li></ol></div>
+  <div class="note"><strong>Price accuracy:</strong> The exact prices recovered from the supplied pricing record are entered directly. Where an exact price was not available in the recovered record, the site deliberately says “Price not entered” rather than inventing a price.</div>
+</div>
+</section>
+
+<footer>
+  <div class="container footer-grid">
+    <div>
+      <h3>ADOLCHY ENTERPRISES</h3>
+      <p>Product catalogue for adhesives, edge tape, drawer runners and hardware products.</p>
+      <p>&copy; 2026, ANDREWS SIMPLE BLOG. All RightsnReserved .</p>
+    </div>
+    <div>
+      <h3>Catalogue</h3>
+      <p><a href="product.html">All Products</a></p>
+      <p><a href="delivery.html">Delivery</a></p>
+    </div>
+    <div>
+      <h3>Navigation</h3>
+      <p><a href="about.html">About</a></p>
+      <p><a href="contact.html">Contact</a></p>
+    </div>
+  </div>
+</footer>
+
+<script src="js/product.js"></script><script src="js/script.js"></script>
+</body></html>
